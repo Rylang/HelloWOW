@@ -1,0 +1,6 @@
+## Interface: 80100
+## Title: Ryans HelloWOW Addon
+## Author: Ryan
+## Version: 0.1
+
+main.lua
