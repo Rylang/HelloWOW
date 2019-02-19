@@ -1,5 +1,5 @@
 ## Interface: 80100
-## Title: Ryans HelloWOW Addon
+## Title: HelloWOW
 ## Author: Ryan
 ## Version: 0.1
 
