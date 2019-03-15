@@ -7,7 +7,17 @@ efLogin:RegisterEvent("PLAYER_LOGIN")
 
 -- Then set a script that is executed when the Event occurs
 efLogin:SetScript("OnEvent", function(self, event, ...)
-    ChatFrame1:AddMessage('Why Hello There '.. UnitName("Player"))
+    if type(CharacterVar) ~= "number" then
+        CharacterVar = 1
+        ChatFrame1:AddMessage('Why hello there ' .. UnitName("Player") .. ', I see it is your first time logging in.')
+    else
+        if CharacterVar == 1 then
+            ChatFrame1:AddMessage('Why hello there ' .. UnitName("Player") .. ', I see you have logged in ' .. CharacterVar .. ' time before.')
+        else
+            ChatFrame1:AddMessage('Why hello there ' .. UnitName("Player") .. ', I see you have logged in ' .. CharacterVar .. ' times before.')
+        end
+        CharacterVar = CharacterVar + 1
+    end
 end)
 
 -- Combat Notification

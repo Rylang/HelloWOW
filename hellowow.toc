@@ -2,5 +2,6 @@
 ## Title: HelloWOW
 ## Author: Ryan
 ## Version: 0.1
+## SavedVariablesPerCharacter: CharacterVar
 
 main.lua
